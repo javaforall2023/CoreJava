@@ -2,26 +2,63 @@ package com.javaforall.dayone;
 
 public class Methods {
 
-	public static void main(String[] args) {
-		
-		int a = 10;
-		int b = 30;
-		
-		int c = addition(a,b);
-		System.out.println(c);
-		
-		int x = 30, y=40;
-		
-		int z = addition(x,y);
-		
-		System.out.println(z);
+int a;
+int b;
 
+public void printData() {
+	
+	Child c = new Child();
+	
+
+}
+	
+// Inheritance - has a relationship
+
+// Single Inheritance, Multiple Inheritance, Multi LevelInheritance
+
+// Java does not support multiple inheritance? // What is diamond problem ... 
+
+// Ability to take more than one form
+
+	// Overloading Over riding
+
+void calculate(int a, int b){
+	
+}
+
+void calculate(float a, float b) {
+	
+}
+
+
+
+}
+
+class GrandParent{
+	
+	public void grantParentProperties() {
+		
 	}
 	
-	static int addition(int x,int y) {
-		int result = x+y;
+}
+class Parent extends GrandParent{
+	
+	public void parentPropeties() {
 		
-		return result;
 	}
+	
+	void calculate(int a, int b){
+		
+	}
+}
 
+class Child extends Parent{
+	
+	public void childProperties() {
+		
+	}
+	
+	void calculate(int a, int b){
+		
+	}
 }
