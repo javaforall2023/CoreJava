@@ -7,7 +7,7 @@ public class CitiBank implements BankInterface{
 	@Override
 	public void openAnAccount() {
 		// TODO Auto-generated method stub
-		
+		System.out.println("Citi Bank Account OPening..");
 	}
 
 	@Override

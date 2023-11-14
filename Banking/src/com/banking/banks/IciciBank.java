@@ -6,7 +6,7 @@ public class IciciBank implements BankInterface{
 
 	@Override
 	public void openAnAccount() {
-		// TODO Auto-generated method stub
+		System.out.println("IciciBank Acccount Opening");
 		
 	}
 
