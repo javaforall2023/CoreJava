@@ -17,7 +17,7 @@ public class SetImplementationEx {
 		set.add(5);
 		
 		Iterator<Integer> itr = set.iterator();
-		
+	
 		while(itr.hasNext()) {
 			System.out.println(itr.next());
 		}

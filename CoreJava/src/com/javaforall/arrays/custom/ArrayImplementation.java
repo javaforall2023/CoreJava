@@ -1,5 +1,7 @@
 package com.javaforall.arrays.custom;
 
+// java.util.*
+
 public class ArrayImplementation {
 
 	public static void main(String[] args) {
