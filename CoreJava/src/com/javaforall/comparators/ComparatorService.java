@@ -49,7 +49,9 @@ public class ComparatorService {
 		
 		//Collections.sort(empList, new EmployeeNameComparator()); // By Using Comparator Class Interface
 		
-		//Collections.sort(empList,addressComparator);	// Anonymous inner class Comparator	
+		//employeeListonAddress = Collections.sort(empList,addressComparator);	// Anonymous inner class Comparator	
+		//employeeListOnName = Collections.sort(empList,nameComparator);
+		
 		
 		/*
 		 * Collections.sort(empList,new Comparator<Employee>() { public int
@@ -57,7 +59,7 @@ public class ComparatorService {
 		 * emp1.getEmpName().compareTo(emp2.getEmpName()); } });
 		 */
 		
-		empList.sort(Comparator.comparing(Employee::getEmpName));
+		empList.sort(Comparator.comparing(Employee::getEmpAddress));
 		
 		
 		System.out.println("### Employee List after sorting with Comparable interface");
@@ -80,6 +82,13 @@ public class ComparatorService {
 			return emp1.getEmpAddress().compareTo(emp2.getEmpAddress());
 		}
 	};
+	
+	public static Comparator<Employee> nameComparator = new Comparator<>() {
+		public int compare(Employee emp1, Employee emp2) {
+			return emp1.getEmpName().compareTo(emp2.getEmpName());
+		}
+	};
+	
 	
 	public static void printEmpList(List<Employee> empList) {
 		for(Employee emp:empList) {

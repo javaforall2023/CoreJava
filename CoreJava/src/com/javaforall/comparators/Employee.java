@@ -1,6 +1,6 @@
 package com.javaforall.comparators;
 
-public class Employee{
+public class Employee implements Comparable<Employee>{
 	
 	private Integer empNo;
 	private String empName;
@@ -51,6 +51,12 @@ public class Employee{
 	public String toString() {
 		return "Employee [empNo=" + empNo + ", empName=" + empName + ", empAge=" + empAge + ", empAddress=" + empAddress
 				+ "]";
+	}
+
+	@Override
+	public int compareTo(Employee emp1) {
+		// TODO Auto-generated method stub
+		return this.empNo - emp1.getEmpNo();
 	}
 		
 
