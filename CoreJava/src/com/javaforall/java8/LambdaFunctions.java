@@ -33,6 +33,8 @@ public class LambdaFunctions {
 		// Create examples of lambda functions using the default Functional Interfaces
 		
 		
+		
+		
 	}
 
 }
